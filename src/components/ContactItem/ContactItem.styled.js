@@ -11,6 +11,11 @@ export const Contact = styled('li')({
   marginTop: '6px',
   paddingLeft: '8px',
   paddingRight: '8px',
+
+  '&:hover': {
+    color: 'rgb(243, 243, 116)',
+    boxShadow: '0px 0px 1px 1px rgba(0, 0, 0, 0.4)',
+  },
 });
 
 export const ContactName = styled('p')({});
