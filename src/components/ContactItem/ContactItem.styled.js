@@ -9,6 +9,7 @@ export const Contact = styled('li')({
   borderRadius: '10px',
   gap: '10px',
   marginTop: '6px',
+  paddingLeft: '8px',
   paddingRight: '8px',
 });
 
