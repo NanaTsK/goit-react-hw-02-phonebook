@@ -48,7 +48,7 @@ export class App extends Component {
     return (
       <Container>
         <h1>Phonebook</h1>
-        <p>contact form</p>
+        <p>contact form here</p>
         <h2>Contacts</h2>
         <ContactList
           contacts={filterContacts}
@@ -59,12 +59,3 @@ export class App extends Component {
     );
   }
 }
-
-// return <Container>
-//       <h1>Phonebook</h1>
-// <ContactForm ... />
-
-// <h2>Contacts</h2>
-// <Filter ... />
-// <ContactList ... />
-//   </Container>;
