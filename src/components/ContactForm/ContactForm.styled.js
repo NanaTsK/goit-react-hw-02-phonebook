@@ -35,7 +35,7 @@ export const ContactAddBtn = styled('button')({
   transition: `color ${transition}, box-shadow ${transition}`,
 
   '&:hover': {
-    boxShadow: '0px 0px 1px 1px rgba(0, 0, 0, 0.4)',
     color: 'rgba(145, 14, 14, 0.8)',
+    boxShadow: '0px 0px 1px 1px rgba(0, 0, 0, 0.4)',
   },
 });
