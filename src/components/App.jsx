@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { Container } from './index.styled';
+import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 
 export class App extends Component {
@@ -48,7 +49,7 @@ export class App extends Component {
     return (
       <Container>
         <h1>Phonebook</h1>
-        <p>contact form here</p>
+        <ContactForm />
         <h2>Contacts</h2>
         <ContactList
           contacts={filterContacts}
