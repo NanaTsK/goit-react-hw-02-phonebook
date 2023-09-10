@@ -5,7 +5,7 @@ export const PhonebookForm = styled('form')({
   flexDirection: 'column',
   paddingBottom: '15px',
 });
-export const ContactLable = styled('lable')({
+export const ContactLabel = styled('label')({
   color: 'rgba(255, 255, 255, 0.6)',
   marginTop: '10px',
 });
