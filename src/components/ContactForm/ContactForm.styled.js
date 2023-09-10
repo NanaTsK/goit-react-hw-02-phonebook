@@ -7,7 +7,6 @@ export const PhonebookForm = styled('form')({
 });
 export const ContactLable = styled('lable')({});
 export const ContactInput = styled('input')({
-  //   backgroundColor: 'rgba(104, 133, 176, 0.8)',
   backgroundColor: 'transparent',
 });
 export const ContactAddBtn = styled('button')({});
