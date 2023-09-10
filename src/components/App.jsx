@@ -48,7 +48,7 @@ export class App extends Component {
     return (
       <Container>
         <h1>Phonebook</h1>
-
+        <p>contact form</p>
         <h2>Contacts</h2>
         <ContactList
           contacts={filterContacts}
