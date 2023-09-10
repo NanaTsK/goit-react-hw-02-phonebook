@@ -44,7 +44,6 @@ export const ContactRemoveBtn = styled('button')({
   },
 
   '&:hover svg': {
-    fill: '#bbb',
     fill: 'rgba(145, 14, 14, 0.8)',
     transition: `fill ${transition}, box-shadow ${transition}, transform ${transition}`,
   },
