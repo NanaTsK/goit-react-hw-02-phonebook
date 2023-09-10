@@ -4,24 +4,6 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 
 export class App extends Component {
-  // state = {
-  //   contacts: [],
-  //   name: '',
-  // };
-
-  // state = {
-  //   contacts: [],
-  //   name: '',
-  //   number: '',
-  // };
-
-  // state = {
-  //   contacts: [],
-  //   filter: '',
-  //   name: '',
-  //   number: '',
-  // };
-
   state = {
     contacts: [
       { id: 'id-1', name: 'Lesya Ukrainka', number: '459-12-56' },
