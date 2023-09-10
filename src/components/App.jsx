@@ -19,7 +19,7 @@ export class App extends Component {
       ({ name }) => name === newContact.name
     );
     if (isTrue) {
-      alert(`${newContact.name} is already in contacts!`);
+      alert(`${newContact.name} is already in Phonebook!`);
       return;
     }
     this.setState(({ contacts }) => ({ contacts: [newContact, ...contacts] }));
