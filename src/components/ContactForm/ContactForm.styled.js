@@ -14,7 +14,8 @@ export const ContactInput = styled('input')({
   backgroundColor: 'transparent',
   border: 'none',
   borderBottom: '2px solid rgba(255, 255, 255, 0.5)',
-  color: 'inherit',
+  //   color: 'inherit',
+  color: 'rgb(243, 243, 116)',
   font: 'inherit',
   outline: 0,
 });
@@ -25,7 +26,7 @@ export const ContactAddBtn = styled('button')({
   marginTop: '20px',
   cursor: 'pointer',
   border: 'none',
-  color: 'rgba(145, 14, 14, 0.4)',
+  color: 'rgba(243, 243, 116, 0.6)',
   font: 'inherit',
   backgroundColor: 'rgba(104, 133, 176, 0.4)',
   boxShadow: '0px 0px 1px 1px rgba(0, 0, 0, 0.2)',
@@ -35,7 +36,7 @@ export const ContactAddBtn = styled('button')({
   transition: `color ${transition}, box-shadow ${transition}`,
 
   '&:hover': {
-    color: 'rgba(145, 14, 14, 0.8)',
+    color: 'rgb(243, 243, 116)',
     boxShadow: '0px 0px 1px 1px rgba(0, 0, 0, 0.4)',
   },
 });

@@ -17,7 +17,7 @@ export class ContactForm extends Component {
 
   handleInput = e => {
     this.setState({
-      [e.target.name]: e.target.value.trim(),
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -51,7 +51,7 @@ export class ContactForm extends Component {
           type="tel"
           name="number"
           pattern="\+?\d{1,4}?[ .\-\s]?\(?\d{1,3}?\)?[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,9}"
-          title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+          title="Phone number must be at least 5 digits and can contain spaces, dashes, parentheses and can start with +"
           autoComplete="off"
           value={this.state.number}
           onChange={this.handleInput}
