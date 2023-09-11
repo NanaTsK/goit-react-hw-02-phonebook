@@ -11,14 +11,3 @@ export const ContactList = ({ contacts, removeContact }) => {
     </ContactBook>
   );
 };
-
-// export const ContactList = ({ contacts, removeContact }) => {
-//   return (
-//     <ContactBook>
-//       <ContactItem
-//         contacts={contacts}
-//         removeContact={removeContact}
-//       ></ContactItem>
-//     </ContactBook>
-//   );
-// };
