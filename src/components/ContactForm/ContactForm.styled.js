@@ -20,7 +20,8 @@ export const ContactInput = styled('input')({
   font: 'inherit',
   outline: 0,
 
-  transition: `color ${transition}, box-shadow ${transition}`,
+  transition: `borderColor ${transition}`,
+
   '&:focus': {
     borderColor: 'rgb(243, 243, 116)',
   },
