@@ -57,7 +57,6 @@ import { FilterForm } from './Filter.styled';
 export const Filter = ({ filter, handleFilter }) => {
   return (
     <FilterForm>
-      <ContactLabel>Find contacts by name</ContactLabel>
       <ContactInput
         type="text"
         name="filter"
@@ -67,6 +66,7 @@ export const Filter = ({ filter, handleFilter }) => {
         value={filter}
         onChange={handleFilter}
       />
+      <ContactLabel>Find contacts by name</ContactLabel>
     </FilterForm>
   );
 };
