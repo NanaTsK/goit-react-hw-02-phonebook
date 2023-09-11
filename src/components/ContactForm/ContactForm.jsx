@@ -40,7 +40,8 @@ export class ContactForm extends Component {
           type="text"
           name="name"
           pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-          title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+          title="Name may contain up to 16 letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Comte d'Artagnan"
+          maxLength="16"
           autoComplete="off"
           value={this.state.name}
           onChange={this.handleInput}
@@ -51,7 +52,8 @@ export class ContactForm extends Component {
           type="tel"
           name="number"
           pattern="\+?\d{1,4}?[ .\-\s]?\(?\d{1,3}?\)?[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,9}"
-          title="Phone number must be at least 5 digits and can contain spaces, dashes, parentheses and can start with +"
+          title="Phone number may contain 5-16 digits, spaces, dashes, parentheses and can start with +"
+          maxLength="16"
           autoComplete="off"
           value={this.state.number}
           onChange={this.handleInput}

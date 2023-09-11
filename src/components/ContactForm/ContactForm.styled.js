@@ -14,10 +14,15 @@ export const ContactInput = styled('input')({
   backgroundColor: 'transparent',
   border: 'none',
   borderBottom: '2px solid rgba(255, 255, 255, 0.5)',
-  //   color: 'inherit',
-  color: 'rgb(243, 243, 116)',
+  color: 'inherit',
+  //   color: 'rgb(243, 243, 116)',
   font: 'inherit',
   outline: 0,
+
+  //   '&:focus > ContactLabel': {
+  //     color: 'rgb(243, 243, 116)',
+  //     transition: `fill ${transition}, box-shadow ${transition}, transform ${transition}`,
+  //   },
 });
 
 const transition = '250ms cubic-bezier(0.4, 0, 0.2, 1)';
