@@ -4,7 +4,7 @@ const transition = '250ms cubic-bezier(0.4, 0, 0.2, 1)';
 
 export const PhonebookForm = styled('form')({
   display: 'flex',
-  flexDirection: 'column',
+  flexDirection: 'column-reverse',
   paddingBottom: '15px',
 });
 export const ContactLabel = styled('label')({
@@ -21,6 +21,10 @@ export const ContactInput = styled('input')({
   outline: 0,
 
   transition: `borderColor ${transition}`,
+
+  '&:focus + label': {
+    color: 'rgb(243, 243, 116)',
+  },
 
   '&:focus': {
     borderColor: 'rgb(243, 243, 116)',

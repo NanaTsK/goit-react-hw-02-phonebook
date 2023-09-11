@@ -35,7 +35,6 @@ export class ContactForm extends Component {
   render() {
     return (
       <PhonebookForm onSubmit={this.handleSubmitForm}>
-        <ContactLabel>Name</ContactLabel>
         <ContactInput
           type="text"
           name="name"
@@ -47,7 +46,7 @@ export class ContactForm extends Component {
           onChange={this.handleInput}
           required
         />
-        <ContactLabel>Number</ContactLabel>
+        <ContactLabel>Name</ContactLabel>
         <ContactInput
           type="tel"
           name="number"
@@ -59,6 +58,7 @@ export class ContactForm extends Component {
           onChange={this.handleInput}
           required
         />
+        <ContactLabel>Number</ContactLabel>
         <ContactAddBtn type="submit">Add contact</ContactAddBtn>
       </PhonebookForm>
     );
