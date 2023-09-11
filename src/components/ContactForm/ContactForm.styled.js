@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+const transition = '250ms cubic-bezier(0.4, 0, 0.2, 1)';
+
 export const PhonebookForm = styled('form')({
   display: 'flex',
   flexDirection: 'column',
@@ -8,6 +10,8 @@ export const PhonebookForm = styled('form')({
 export const ContactLabel = styled('label')({
   color: 'rgba(255, 255, 255, 0.6)',
   marginTop: '10px',
+
+  transition: `color ${transition}`,
 });
 
 export const ContactInput = styled('input')({
@@ -15,17 +19,17 @@ export const ContactInput = styled('input')({
   border: 'none',
   borderBottom: '2px solid rgba(255, 255, 255, 0.5)',
   color: 'inherit',
-  //   color: 'rgb(243, 243, 116)',
   font: 'inherit',
   outline: 0,
 
-  //   '&:focus > ContactLabel': {
-  //     color: 'rgb(243, 243, 116)',
-  //     transition: `fill ${transition}, box-shadow ${transition}, transform ${transition}`,
-  //   },
+  transition: `color ${transition}, box-shadow ${transition}`,
+  '&:focus': {
+    borderColor: 'rgb(243, 243, 116)',
+  },
+  '&:focus + label': {
+    color: 'rgb(243, 243, 116)',
+  },
 });
-
-const transition = '250ms cubic-bezier(0.4, 0, 0.2, 1)';
 
 export const ContactAddBtn = styled('button')({
   marginTop: '20px',
