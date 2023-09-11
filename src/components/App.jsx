@@ -2,6 +2,7 @@ import { Component } from 'react';
 import { Container } from './index.styled';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
+import { Filter } from './Filter/Filter';
 
 export class App extends Component {
   state = {
@@ -44,6 +45,7 @@ export class App extends Component {
         <h1>Phonebook</h1>
         <ContactForm handleAddContact={this.handleAddContact} />
         <h2>Contacts</h2>
+        <Filter />
         <ContactList
           contacts={filterContacts}
           removeContact={this.removeContact}
