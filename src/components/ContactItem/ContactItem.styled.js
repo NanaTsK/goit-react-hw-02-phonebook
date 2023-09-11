@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
+const transition = '250ms cubic-bezier(0.4, 0, 0.2, 1)';
+
 export const Contact = styled('li')({
   display: 'flex',
-  height: '36px',
+  flexWrap: 'wrap',
+  minHeight: '36px',
   alignItems: 'center',
   backgroundColor: 'rgba(104, 133, 176, 0.4)',
   boxShadow: '0px 0px 1px 1px rgba(0, 0, 0, 0.2)',
@@ -12,6 +15,8 @@ export const Contact = styled('li')({
   paddingLeft: '8px',
   paddingRight: '8px',
 
+  transition: `color ${transition}, box-shadow ${transition}`,
+
   '&:hover': {
     color: 'rgb(243, 243, 116)',
     boxShadow: '0px 0px 1px 1px rgba(0, 0, 0, 0.4)',
@@ -20,8 +25,6 @@ export const Contact = styled('li')({
 
 export const ContactName = styled('p')({});
 export const ContactNumber = styled('p')({});
-
-const transition = '250ms cubic-bezier(0.4, 0, 0.2, 1)';
 
 export const ContactRemoveBtn = styled('button')({
   marginLeft: 'auto',
@@ -34,8 +37,6 @@ export const ContactRemoveBtn = styled('button')({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-
-  transition: `fill ${transition}, box-shadow ${transition}, transform ${transition}`,
 
   '& > svg': {
     fontSize: '16px',
@@ -51,6 +52,6 @@ export const ContactRemoveBtn = styled('button')({
 
   '&:hover svg': {
     fill: 'rgba(145, 14, 14, 0.8)',
-    transition: `fill ${transition}, box-shadow ${transition}, transform ${transition}`,
   },
+  transition: `fill ${transition}, box-shadow ${transition}, transform ${transition}`,
 });
