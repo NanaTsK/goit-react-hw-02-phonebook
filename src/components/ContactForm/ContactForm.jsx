@@ -35,18 +35,8 @@ export class ContactForm extends Component {
   render() {
     return (
       <PhonebookForm onSubmit={this.handleSubmitForm}>
-        <ContactInput
-          type="text"
-          name="name"
-          pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-          title="Name may contain up to 16 letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Comte d'Artagnan"
-          maxLength="16"
-          autoComplete="off"
-          value={this.state.name}
-          onChange={this.handleInput}
-          required
-        />
-        <ContactLabel>Name</ContactLabel>
+        <ContactAddBtn type="submit">Add contact</ContactAddBtn>
+
         <ContactInput
           type="tel"
           name="number"
@@ -59,7 +49,18 @@ export class ContactForm extends Component {
           required
         />
         <ContactLabel>Number</ContactLabel>
-        <ContactAddBtn type="submit">Add contact</ContactAddBtn>
+        <ContactInput
+          type="text"
+          name="name"
+          pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+          title="Name may contain up to 16 letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Comte d'Artagnan"
+          maxLength="16"
+          autoComplete="off"
+          value={this.state.name}
+          onChange={this.handleInput}
+          required
+        />
+        <ContactLabel>Name</ContactLabel>
       </PhonebookForm>
     );
   }
