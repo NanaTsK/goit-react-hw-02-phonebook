@@ -7,5 +7,5 @@ export const Container = styled.div`
   color: #fff;
   margin: 20px auto;
   padding: 10px;
-  width: 320px;
+  width: 340px;
 `;
