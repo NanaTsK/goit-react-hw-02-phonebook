@@ -10,8 +10,6 @@ export const PhonebookForm = styled('form')({
 export const ContactLabel = styled('label')({
   color: 'rgba(255, 255, 255, 0.6)',
   marginTop: '10px',
-
-  transition: `color ${transition}`,
 });
 
 export const ContactInput = styled('input')({
@@ -25,9 +23,6 @@ export const ContactInput = styled('input')({
   transition: `color ${transition}, box-shadow ${transition}`,
   '&:focus': {
     borderColor: 'rgb(243, 243, 116)',
-  },
-  '&:focus + label': {
-    color: 'rgb(243, 243, 116)',
   },
 });
 
