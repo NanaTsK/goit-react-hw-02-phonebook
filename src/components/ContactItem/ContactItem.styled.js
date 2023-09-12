@@ -17,7 +17,7 @@ export const Contact = styled('li')({
 
   transition: `color ${transition}, box-shadow ${transition}`,
 
-  '&:hover': {
+  '&:hover, &:focus': {
     color: 'rgb(243, 243, 116)',
     boxShadow: '0px 0px 1px 1px rgba(0, 0, 0, 0.4)',
   },
@@ -29,8 +29,8 @@ export const ContactNumber = styled('p')({});
 export const ContactRemoveBtn = styled('button')({
   marginLeft: 'auto',
   cursor: 'pointer',
-  width: '22px',
-  height: '22px',
+  width: '24px',
+  height: '24px',
   borderRadius: '100%',
   backgroundColor: 'transparent',
   border: 'transparent',
@@ -39,10 +39,10 @@ export const ContactRemoveBtn = styled('button')({
   justifyContent: 'center',
 
   '& > svg': {
-    fontSize: '16px',
-    width: '16px',
-    height: '16px',
+    width: '22px',
+    height: '22px',
     fill: 'rgba(145, 14, 14, 0.4)',
+    display: 'inline-block',
   },
 
   '&:hover': {
