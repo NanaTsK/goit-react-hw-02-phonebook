@@ -69,7 +69,6 @@ export class App extends Component {
         <ContactList
           contacts={filterContacts}
           removeContact={this.removeContact}
-          getFilterContacts={this.getFilterContacts}
         />
       </Container>
     );
