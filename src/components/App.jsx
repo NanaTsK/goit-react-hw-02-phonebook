@@ -38,6 +38,10 @@ export class App extends Component {
     }));
   };
 
+  handleFilter = ({ target: { value } }) => {
+    this.setState({ filter: value });
+  };
+
   render() {
     const filterContacts = this.getFilterContacts();
     return (
@@ -45,7 +49,7 @@ export class App extends Component {
         <h1>Phonebook</h1>
         <ContactForm handleAddContact={this.handleAddContact} />
         <h2>Contacts</h2>
-        <Filter />
+        <Filter filter={this.state.filter} handleFilter={this.handleFilter} />
         <ContactList
           contacts={filterContacts}
           removeContact={this.removeContact}
