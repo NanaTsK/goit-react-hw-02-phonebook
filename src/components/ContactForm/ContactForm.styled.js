@@ -4,9 +4,15 @@ const transition = '250ms cubic-bezier(0.4, 0, 0.2, 1)';
 
 export const PhonebookForm = styled('form')({
   display: 'flex',
-  flexDirection: 'column-reverse',
+  flexDirection: 'column',
   paddingBottom: '15px',
 });
+
+export const InputWrap = styled('div')({
+  display: 'flex',
+  flexDirection: 'column-reverse',
+});
+
 export const ContactLabel = styled('label')({
   color: 'rgba(255, 255, 255, 0.6)',
   marginTop: '10px',
