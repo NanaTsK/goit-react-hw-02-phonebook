@@ -1,9 +1,13 @@
-import { ContactLabel, ContactInput } from '../ContactForm/ContactForm.styled';
-import { FilterForm } from './Filter.styled';
+import {
+  InputWrap,
+  ContactLabel,
+  ContactInput,
+} from '../ContactForm/ContactForm.styled';
+// import { FilterForm } from './Filter.styled';
 
 export const Filter = ({ filter, handleFilter }) => {
   return (
-    <FilterForm>
+    <InputWrap>
       <ContactInput
         type="text"
         name="filter"
@@ -14,6 +18,6 @@ export const Filter = ({ filter, handleFilter }) => {
         onChange={handleFilter}
       />
       <ContactLabel>Find contacts by name</ContactLabel>
-    </FilterForm>
+    </InputWrap>
   );
 };
